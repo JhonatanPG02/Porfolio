@@ -1,0 +1,112 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+    width: 100%;
+    background-color:  rgb(37, 38, 39);
+    color: white;
+}
+
+.menu {
+    color: var(--color-text-nav);
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.container {
+    background-color: var(--color-primario);
+    height: 10vh;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 2em;
+}
+
+.linksContainer{
+    background-color: rgb(52, 60, 109);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: absolute;
+    gap: 0.5em;
+    transition: 0.5s;
+    margin-top: 10vh;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.inactive{
+    transform: translateY(-150%);
+}
+.active{
+    transform: translateX(0%);
+}
+
+.link{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    font-weight: 300;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.link:hover{
+    color: var(--color-text-nav-hover);
+}
+
+.activebutton{
+    color: aqua;
+    background-color: var(--color-text-nav-hover);
+    animation: linkActive 2s;
+    box-shadow: inset 0px 0px 0px 5px var(--color-secundario);
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    .menu {
+        display: none;
+    }
+    .linksContainer{
+        transform: translateY(0%);
+        flex-direction: row;
+        justify-content: flex-end;
+        background-color: transparent;
+        width: 50%;
+        position: relative;
+        margin-top: 0;
+        z-index: 1;
+        font-size: 18px;
+    }
+    .logo{
+        padding-left: 1em;
+    }
+    .link{
+        width: 120px;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .activebutton{
+        color: aqua;
+        background-color: var(--color-secundario);
+        animation: linkActive 2s;
+    }
+    .link:hover{
+        background-color: gray;
+    }
+}

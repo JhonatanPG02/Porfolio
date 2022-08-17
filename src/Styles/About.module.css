@@ -1,0 +1,60 @@
+
+.total {
+    background-color: rgb(37, 38, 39);
+    position:absolute;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+    color: white;
+    align-items: center;
+    font-size: 18px;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.containerabout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* text-align: center; */
+}
+
+.img {
+    width: 18rem;
+    height: 20rem;
+    border: 5px solid aqua;
+    margin-left: 2rem;
+}
+
+.download {
+    background-color: aqua;
+    cursor: pointer;
+    margin-top: 3rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.subtitle {
+    color: aqua;
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: lighter;
+}
+
+.tecnologias {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    color: white;
+    margin-top: 0.5rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
